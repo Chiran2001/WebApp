@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+             
+    input[type=text], select {    
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+        }
+    input[type=password], select {    
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+        }
+    input[type=submit] {    
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+
+    div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+    body{font-family:Comic Sans MS;
+                     font-size:30; 
+                     color:white;
+                    } 
+    h1{font-family: Comic Sans MS;}     
+      
+        </style>
+    </head>
+    <body background="Login.jpg">      
+         <center> <h1>Register</h1>
+             <form action="Register.jsp" method="POST">
+                     First Name:<br><input type="text" name="firstName" /><br><br>
+                     Last Name:<br><input type="text" name="lastName" /><br><br>
+                     Username:<br><input type="text" name="Username" /><br><br>
+                     City:<br><input type="text" name="city"  /><br><br>
+                     Nationality:<br><input type="text" name="nationality"/><br><br>
+                     Age:<br><input type="text" name="age" /><br><br>
+                     Gender: &nbsp; <select name="Gender">
+                     <option>Male</option>
+                     <option>Female</option>                                         
+                     </select><br><br>
+                     Civil Status:
+                     Married<input type="radio" name="rdo" value="married">
+                     Unmarried<input type="radio" name="rdo" value="unMarried">
+                     <br><br>                     
+                     Password:<br><input type="Password" name="Pass"  /><br><br>
+                     Confirm Password:<br><input type="Password" name="ConPass" /><br><br>                     
+                     <input type="submit" value="Register" />
+                 </form>             
+             </center>
+    </body>
+</html>
